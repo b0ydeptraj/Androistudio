@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_QLS"
+        android:text="Quản lý sách"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gline_doc"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_masach"
+        android:text="Mã sách:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_QLS"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_masach"
+        android:hint="Nhập mã Sách"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_QLS"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_tensach"
+        android:text="Tên Sách:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_masach"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_tensach"
+        android:hint="Nhập tên Sách"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_masach"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_theloaisach"
+        android:text="Loại sạch:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tensach"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_theloaisach"
+        android:hint="Nhập Loại sách"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tensach"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_tacgia"
+        android:text="Tác giả:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_theloaisach"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_tacgia"
+        android:hint="Nhập tác giả"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_theloaisach"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_dongia"
+        android:text="Đơn  Giá:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tacgia"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_dongia"
+        android:hint="Nhập Đơn  Giá"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tacgia"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_nhaxuatban"
+        android:text="Nhà xuất bản:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dongia"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_nhaxuatban"
+        android:hint="Nhập nhà xuất bản"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dongia"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/gline_doc"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_Them"
+        android:text="Thêm"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_Sua"
+        android:text="Sửa"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_Them"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_Xoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:text="Xóa"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_Sua"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia" />
+
+    <Button
+        android:id="@+id/btn_Thoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:text="Thoát"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_Xoa"
+        app:layout_constraintTop_toBottomOf="@id/tv_dongia" />
+
+    <ListView
+        android:id="@+id/lv_sach"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
